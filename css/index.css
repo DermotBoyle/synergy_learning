@@ -1,0 +1,555 @@
+/* Define standard variables and values for website */
+body {
+  margin: 0;
+}
+body #first-section-container {
+  position: relative;
+  background-image: url('/images/apple-office.png');
+  background-size: cover;
+  width: 100%;
+  min-height: 690px;
+}
+body #first-section-container #background-overlay {
+  width: 100%;
+  height: 100%;
+  background: #56abbf;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 0;
+}
+body #first-section-container header {
+  padding: 0 118px;
+}
+body #first-section-container header #user-login-container {
+  display: flex;
+  justify-content: flex-end;
+}
+body #first-section-container header #user-login-container .login-links {
+  font-family: 'Open Sans', sans-serif;
+  width: fit-content;
+  padding-right: 2%;
+  padding-left: 1%;
+  color: #ffff;
+  z-index: 1;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+body #first-section-container header #user-login-container .login-links:nth-child(-n + 2) {
+  border-right: solid 1px black;
+}
+body #first-section-container header nav {
+  height: 82px;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+body #first-section-container header nav .flex-end-container {
+  margin-left: 6%;
+}
+body #first-section-container header nav .flex-end-container .input-group input {
+  height: 45px;
+  background-color: #f6f7f7;
+  border: none;
+}
+body #first-section-container header nav .flex-end-container .input-group button {
+  width: 45px;
+  background-color: #edeeef;
+  border: none;
+}
+body #first-section-container header nav .flex-end-container .input-group button i {
+  color: #3c3c3c;
+}
+body #first-section-container header nav ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly !important;
+}
+body #first-section-container header nav ul li a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #696969;
+  font-weight: 600;
+}
+body #first-section-container header #header-intro-text-container {
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 5%;
+  max-height: 560px;
+}
+body #first-section-container header #header-intro-text-container .text-container {
+  width: 36%;
+}
+body #first-section-container header #header-intro-text-container .text-container h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #ffff;
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: 12%;
+  margin-bottom: 5%;
+}
+body #first-section-container header #header-intro-text-container .text-container p {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffff;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+body #first-section-container header #header-intro-text-container .text-container button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffd032;
+  color: #ffff;
+  height: 60px;
+  width: 385px;
+  font-size: 18px;
+  border: none !important;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card {
+  width: 420px;
+  height: 800px;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url(/images/profile_pic.png);
+  background-position: center;
+  background-size: cover;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .image-container .cogs-icon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 18px;
+  color: #006482;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .image-container .mail-icon-container {
+  position: absolute;
+  bottom: -7%;
+  left: 10%;
+  height: 90px;
+  width: 90px;
+  background-color: #c30050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  font-size: 40px;
+  z-index: 2;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .details-container {
+  position: relative;
+  background-color: #ffff;
+  padding: 0 35px;
+  min-height: 280px;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .details-container .badges-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-top: 2%;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .details-container .badges-row span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #c30050;
+  color: #ffff;
+  font-size: 24px;
+  border-radius: 50%;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .details-container .badges-row span:last-child {
+  background-color: #edeeef;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .details-container h4 {
+  font-family: 'Oswald', sans-serif;
+  padding-top: 8%;
+  margin-bottom: 0;
+  color: #50aabe;
+  font-weight: 600;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .details-container h5 {
+  font-family: 'Open Sans', sans-serif;
+  color: #50aabe;
+  margin-bottom: 2%;
+}
+body #first-section-container header #header-intro-text-container #client-login-detail-card .details-container p {
+  font-family: 'Open Sans', sans-serif;
+  color: #3c3c3c;
+  margin-bottom: 0;
+}
+body #current-learning-section {
+  padding: 1% 150px;
+}
+body #current-learning-section div {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin-left: 1%;
+}
+body #current-learning-section div a {
+  font-family: 'Open Sans', sans-serif;
+  width: fit-content;
+  padding-right: 2%;
+  padding-left: 1%;
+  color: #50aabe;
+  z-index: 1;
+  margin-top: 12px;
+  font-size: 13px;
+}
+body #current-learning-section div a:nth-child(2) {
+  color: #c1c1c1;
+}
+body #current-learning-section div a:nth-child(-n + 2) {
+  border-right: solid 1px black;
+}
+body #current-learning-section h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #006482;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body #current-learning-section #progress-visual-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section {
+  width: 100%;
+  align-items: center;
+  padding-top: 1%;
+  padding-left: 2%;
+  border-top: solid 2px #c1c1c1;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:first-child {
+  width: 480px;
+  height: 95px;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(2) {
+  width: 120px;
+  height: 100%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(3) {
+  width: 220px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(3) .bar-container {
+  background-color: #696969;
+  width: 174px;
+  height: 10px;
+  border-radius: 6px;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(3) .bar-container .bar {
+  background-color: #006482;
+  border-radius: 6px 0 0 6px;
+  margin-left: 0;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(3) .bar-container .one {
+  background-color: #006482;
+  width: 50%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(3) .bar-container .two {
+  width: 80%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(3) .bar-container .three {
+  width: 50%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(3) .bar-container .four {
+  width: 80%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(4) {
+  width: 235px;
+  height: 100%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(5) {
+  width: 225px;
+  height: 100%;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span:nth-child(5) button {
+  width: 224px;
+  height: 57px;
+  background-color: #006482;
+  border: none;
+  color: #ffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span h5 {
+  color: #50aabe;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section span p {
+  width: 85%;
+  font-size: 16px;
+  color: #3c3c3c;
+  font-family: 'Open Sans', sans-serif;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section:nth-child(even) {
+  background-color: #edeeef;
+}
+body #current-learning-section #progress-visual-container .progress-visual-section:last-child {
+  border-bottom: solid 2px #c1c1c1;
+}
+body #third-section {
+  padding: 0 10%;
+  padding-top: 7%;
+  padding-bottom: 10%;
+  display: flex;
+}
+body #third-section .image-container {
+  width: 50%;
+  height: 420px;
+}
+body #third-section .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+body #third-section .text-container {
+  width: 50%;
+}
+body #third-section .text-container h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #006482;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 5%;
+  width: 80%;
+}
+body #third-section .text-container p {
+  width: 80%;
+  font-family: 'Open Sans', sans-serif;
+  color: #3c3c3c;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+body #third-section .text-container button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffd032;
+  color: #ffff;
+  height: 60px;
+  width: 385px;
+  font-size: 18px;
+  border: none !important;
+}
+body #carousel-section {
+  background-color: #edeeef;
+  padding-top: 3%;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  overflow-y: scroll;
+}
+body #carousel-section .card-container {
+  height: 390px;
+  width: 330px;
+  margin: 0 1%;
+}
+body #carousel-section .card-container .image-container {
+  position: relative;
+  height: 160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+body #carousel-section .card-container .image-container img {
+  flex-shrink: 1;
+  min-width: 100%;
+  min-height: 100%;
+}
+body #carousel-section .card-container .image-container .new-tag {
+  position: absolute;
+  color: #50aabe;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 6px;
+  font-size: 12px;
+  width: 12%;
+  text-align: center;
+  font-weight: 600;
+  right: 3%;
+  top: 6%;
+}
+body #carousel-section .card-container .card-description {
+  background-color: #56abbf;
+  padding: 16px 16px;
+  height: 50%;
+}
+body #carousel-section .card-container .card-description h4 {
+  font-family: 'Oswald', sans-serif;
+  color: #4891a6;
+  font-size: 18px;
+  font-weight: 600;
+}
+body #carousel-section .card-container .card-description p {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffff;
+  font-size: 14px;
+}
+body #carousel-section .card-container .card-description button {
+  background-color: #006482;
+  border: none;
+  color: #fff;
+  width: 110px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+body #section-four {
+  display: flex;
+}
+body #section-four .image-container {
+  width: 60%;
+  height: 600px;
+  background-image: url(/images/worker-oustide.png);
+  background-position-x: 36%;
+}
+body #section-four .contact-form-container {
+  padding: 92px 80px;
+}
+body #section-four .contact-form-container section h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #2c6483;
+  font-weight: 600;
+  font-size: 40px;
+}
+body #section-four .contact-form-container section p {
+  font-family: 'Open Sans', sans-serif;
+  color: #3c3c3c;
+  width: 90%;
+}
+body #section-four .contact-form-container .contact-form-inputs form div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  align-items: center;
+  padding-right: 10%;
+}
+body #section-four .contact-form-container .contact-form-inputs form div input {
+  width: 500px;
+  height: 45px;
+  background-color: #edeeef;
+  border: none;
+  border-radius: 6px;
+}
+body #section-four .contact-form-container .contact-form-inputs form div label {
+  font-family: 'Oswald', sans-serif;
+  color: #50aabe;
+  font-weight: 600;
+  font-size: 18px;
+}
+body #section-four .contact-form-container .contact-form-inputs form .message-input label {
+  align-self: flex-start;
+}
+body #section-four .contact-form-container .contact-form-inputs form .message-input input {
+  height: 150px;
+}
+body footer .conatiner-one {
+  display: flex;
+  padding: 60px 110px;
+  justify-content: space-between;
+  background-color: #edeeef;
+}
+body footer .conatiner-one #search-container {
+  width: 35%;
+}
+body footer .conatiner-one #search-container h4 {
+  color: #50aabe;
+  font-size: 18px;
+  font-weight: 600;
+}
+body footer .conatiner-one #search-container p {
+  color: #c1c1c1;
+}
+body footer .conatiner-one .input-group input {
+  height: 50px;
+  border: none;
+}
+body footer .conatiner-one .input-group .input-group-append button {
+  background-color: #98989c;
+  text-align: center;
+  border: none;
+  width: 50px;
+  border-radius: inherit;
+}
+body footer .conatiner-one .input-group .input-group-append button i {
+  width: 60%;
+  color: #fff;
+}
+body footer .conatiner-one h5 {
+  color: #c1c1c1;
+  font-weight: 600;
+}
+body footer .conatiner-one a {
+  color: #c1c1c1;
+}
+body footer .conatiner-one i {
+  width: 20%;
+  color: #50aabe;
+}
+body footer .conatiner-one .links-container {
+  display: flex;
+  width: 40%;
+}
+body footer .conatiner-one .links-container .links-group-one {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+}
+body footer .conatiner-one .links-container .links-group-two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+}
+body footer .container-two {
+  background-color: #56abbf;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  padding: 0 95px;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .container-two .synergy-logo {
+  width: 12%;
+}
+body footer .container-two .synergy-logo img {
+  max-width: 100%;
+}
+body footer .container-two .copyright {
+  color: #c1c1c1;
+  font-size: 14px;
+}
+body footer .container-two .copyright p {
+  margin-bottom: 0;
+}
+body footer .container-two .footer-two-links {
+  width: 15%;
+}
+body footer .container-two .footer-two-links a:nth-child(-n + 2) {
+  border-right: solid 1px #c1c1c1;
+}
+body footer .container-two .footer-two-links a {
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 5%;
+  padding-left: 5%;
+  color: #c1c1c1;
+  z-index: 1;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
