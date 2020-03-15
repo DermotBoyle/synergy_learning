@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500|Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -15,6 +18,18 @@
 
 <body>
     <div id="first-section-container">
+
+        <div id="side-menu">
+            <button id="close-button"><i class="fas fa-times"></i></button>
+            <a href="#">User Area</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Record of Learning</a>
+            <a href="#">Meet the team</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+
+
         <div id="background-overlay"></div>
         <header>
             <section id="user-login-container">
@@ -23,6 +38,7 @@
                 <a class="login-links" href="#">CONTACT US</a>
             </section>
             <nav>
+                <button class="burger-button"><i class="fas fa-align-justify"></i></button>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#">HOME</a>
@@ -100,7 +116,7 @@
     </div>
 
     <section id="current-learning-section">
-        <div>
+        <div class="breadcrumbs">
             <a class="level" href="#">TOP LEVEL</a>
             <a class="level" href="#">SECOND LEVEL</a>
             <a class="level" href="#">CURRENT LEVEL</a>
@@ -310,7 +326,7 @@
                     Phasellus ligula ipsum, volutpat eget semper id.</p>
             </section>
             <div class="contact-form-inputs">
-                <form action="" method="post">
+                <form action="" method="post" id="usr-form">
                     <div class="name-input">
                         <label>NAME</label>
                         <input type="text" for="full name">
@@ -321,7 +337,7 @@
                     </div>
                     <div class="message-input">
                         <label for="write your message">MESSAGE</label>
-                        <input type="text" name="message" id="message">
+                        <textarea type="text" name="message" id="message" form="usr-form"></textarea>
                     </div>
                 </form>
             </div>
@@ -388,13 +404,10 @@
     </footer>
 
 
-
-
-
-
-
-
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
