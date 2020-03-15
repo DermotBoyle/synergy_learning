@@ -204,7 +204,7 @@ body #first-section-container header #header-intro-text-container .text-containe
   border: none !important;
 }
 body #first-section-container header #header-intro-text-container #client-login-detail-card {
-  width: 35%;
+  width: 30%;
   height: 100%;
   margin-right: 3%;
 }
@@ -688,7 +688,7 @@ body #section-four .image-container {
   }
 }
 body #section-four .contact-form-container {
-  padding: 92px 80px;
+  padding: 80px;
 }
 @media screen and (max-width: 649px) {
   body #section-four .contact-form-container {
@@ -705,6 +705,18 @@ body #section-four .contact-form-container section p {
   font-family: 'Open Sans', sans-serif;
   color: #3c3c3c;
   width: 90%;
+}
+body #section-four .contact-form-container .contact-form-inputs form .submit-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+body #section-four .contact-form-container .contact-form-inputs form .submit-btn-container button {
+  background-color: #006482;
+  border: none;
+  border-radius: 6px;
+  width: 20%;
+  height: 40px;
+  color: #ffff;
 }
 body #section-four .contact-form-container .contact-form-inputs form div {
   display: flex;

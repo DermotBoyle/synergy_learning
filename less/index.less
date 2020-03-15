@@ -841,7 +841,7 @@ body {
         }
 
         .contact-form-container {
-            padding: 92px 80px;
+            padding: 80px;
 
             @media screen and (max-width: 649px) {
                 display: none;
@@ -870,6 +870,22 @@ body {
 
 
                 form {
+
+                    .submit-btn-container {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        button {
+                            background-color: @header-blue;
+                            border: none;
+                            border-radius: 6px;
+                            width: 20%;
+                            height: 40px;
+                            color: #ffff;
+                        }
+                    }
+
+
                     div {
                         display: flex;
                         justify-content: space-between;
@@ -908,6 +924,8 @@ body {
                             font-weight: 600;
                             font-size: 18px;
                         }
+
+
 
                     }
 
